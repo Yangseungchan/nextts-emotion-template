@@ -1,4 +1,4 @@
-# NextJS + Typescript 템플릿
+# NextJS + Typescript + Emotion 템플릿
 
 ## 템플릿 기능 소개
 
