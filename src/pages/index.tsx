@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Title from "components/Title";
 import { Container } from "components/Container";
-import Image from "next/image";
+import Image from "components/Image";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
       </Head>
       <Title title="NextJS TypeScript Template" />
       <Image src="/vercel.svg" alt="vercel" width="100px" height="100px" />
+      <Image src="/vercel.svg" alt="vercel" width="100px" height="100px" blur />
     </Container>
   );
 }
