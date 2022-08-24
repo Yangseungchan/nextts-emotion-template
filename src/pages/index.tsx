@@ -2,8 +2,10 @@ import Head from "next/head";
 import Title from "components/Title";
 import { Container } from "components/Container";
 import Image from "components/Image";
+import { useTheme } from "@emotion/react";
 
 export default function Home() {
+  const theme = useTheme();
   return (
     <Container>
       <Head>
@@ -12,6 +14,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Title title="NextJS TypeScript Template" />
+      <h1
+        css={{
+          color: theme.colors.cyan[100],
+          fontSize: "24px",
+        }}
+      >
+        Cyan 100
+      </h1>
+      <h1
+        css={{
+          color: theme.colors.cyan[300],
+          fontSize: "24px",
+        }}
+      >
+        Cyan 300
+      </h1>
+      <h1
+        css={{
+          color: theme.colors.cyan[700],
+          fontSize: "24px",
+        }}
+      >
+        Cyan 700
+      </h1>
       <Image src="/vercel.svg" alt="vercel" width="100px" height="100px" />
       <Image src="/vercel.svg" alt="vercel" width="100px" height="100px" blur />
     </Container>
