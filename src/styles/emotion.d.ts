@@ -5,17 +5,17 @@ import "@emotion/react";
 declare module "@emotion/react" {
   export interface Theme {
     colors: {
-      cyan: ColorObject;
+      cyan: Color;
     };
     typography: {
-      h1: TypographyObject;
-      h2: TypographyObject;
-      h3: TypographyObject;
-      paragraph: TypographyObject;
+      h1: Typography;
+      h2: Typography;
+      h3: Typography;
+      paragraph: Typography;
     };
   }
 
-  export interface ColorObject {
+  export interface Color {
     100: string;
     200: string;
     300: string;
@@ -27,7 +27,7 @@ declare module "@emotion/react" {
     900: string;
   }
 
-  export interface TypographyObject {
+  export interface Typography {
     fontSize: string;
     lineHeight: string;
   }
