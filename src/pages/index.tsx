@@ -3,6 +3,7 @@ import Title from "components/Title";
 import { Container } from "components/Container";
 import Image from "components/Image";
 import { useTheme } from "@emotion/react";
+import Typography from "components/Typography";
 
 export default function Home() {
   const theme = useTheme();
@@ -38,6 +39,12 @@ export default function Home() {
       >
         Cyan 700
       </h1>
+      <Typography variant="h1">h1</Typography>
+      <Typography variant="h2">h2</Typography>
+      <Typography variant="paragraph" color={theme.colors.cyan[700]}>
+        paragraph
+      </Typography>
+
       <Image src="/vercel.svg" alt="vercel" width="100px" height="100px" />
       <Image src="/vercel.svg" alt="vercel" width="100px" height="100px" blur />
     </Container>
