@@ -7,6 +7,12 @@ declare module "@emotion/react" {
     colors: {
       cyan: ColorObject;
     };
+    typography: {
+      h1: TypographyObject;
+      h2: TypographyObject;
+      h3: TypographyObject;
+      paragraph: TypographyObject;
+    };
   }
 
   export interface ColorObject {
@@ -19,5 +25,10 @@ declare module "@emotion/react" {
     700: string;
     800: string;
     900: string;
+  }
+
+  export interface TypographyObject {
+    fontSize: string;
+    lineHeight: string;
   }
 }

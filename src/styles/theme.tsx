@@ -16,6 +16,24 @@ const theme: Theme = {
       900: "#23707B",
     },
   },
+  typography: {
+    h1: {
+      fontSize: "38px",
+      lineHeight: "57px",
+    },
+    h2: {
+      fontSize: "32px",
+      lineHeight: "48px",
+    },
+    h3: {
+      fontSize: "24px",
+      lineHeight: "36px",
+    },
+    paragraph: {
+      fontSize: "14px",
+      lineHeight: "22px",
+    },
+  },
 };
 
 export default theme;
